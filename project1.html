@@ -1,0 +1,303 @@
+SOURCECODE :
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navigationBar {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: 30px;
+            width: 100%;
+        }
+
+        #navigationBar ul {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            list-style-type: none;
+            background-color: #eeeeee;
+            overflow: visible;
+        }
+
+        #navigationBar ul>li {
+            display: block;
+            float: left;
+            height: auto;
+            /* menu header's items width */
+            width: 120px;
+        }
+
+        #navigationBar li>a {
+            display: block;
+            padding: 0 0 0 10px;
+            height: 100%;
+            width: 200px;
+            border-right: 1px black solid;
+            line-height: 30px;
+            font-family: sans-serif;
+            font-size: 25px;
+            text-decoration: none;
+            background-color: #eeeeee;
+            color: #5d5636;
+        }
+
+        #navigationBar ul ul {
+            margin-top: 2px;
+            display: none;
+            position: static;
+            height: auto;
+            width: 160px;
+            border: 1px #666666 solid;
+            background-color: #dddddd;
+        }
+
+        #navigationBar ul ul ul li {
+            position: relative;
+            float: none;
+            display: block;
+            height: 28px;
+            width: 100%;
+            border: none;
+        }
+
+        #navigationBar ul li>a {
+            height: 100%;
+            width: 100%;
+            padding: 0 0 0 4%;
+            line-height: 28px;
+            background-color: transparent;
+            border: none;
+            color: rgb(6, 70, 6);
+            font-size: 15px;
+            font-style: normal;
+        }
+
+        #navigationBar li:hover>a {
+            color: #220000;
+            background-color: #eeeabe;
+        }
+
+        #navigationBar li:hover>ul {
+            display: block;
+        }
+
+        body {
+            background-image: url('./images.jfif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat;
+            margin: 0%;
+            padding: 0%;
+            /* Set the opacity of the background image */
+            background-color: rgba(255, 255, 255, 0.05);
+            /* Adjust the alpha value (0.0 to 1.0) */
+
+        }
+
+        footer {
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            border-bottom: 1px;
+        }
+
+        .main-content {
+            color: rgb(243, 96, 145);
+        }
+
+        section {
+            color: #f35050;
+        }
+
+        h1,
+        h2 {
+            color: rgb(231, 190, 7);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: rgb(255, 60, 0)">WELCOME TO NEW AGE LEARNING PLATFORM</h1>
+        <nav id="navigationBar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="tables.html">Tables</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="jquery.html">jQuery</a></li>
+                <li><a href="lists.html">Images</a></li>
+                <li><a href="tables.html">Navigation bars</a></li>
+                <li><a href="javascript.html">Animation</a></li>
+                <li><a href="jquery.html">Interactive Web Design</a></li>
+                <li><a href="#queries">Help & Queries</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="main-content">
+        <p style="color: lightcoral;">Welcome to our interactive website! Explore different sections from the navigation
+            menu.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique blanditiis porro voluptate cumque
+            velit molestiae illo voluptatibus ut totam at consequatur temporibus, eaque cum. Cumque ut voluptatum
+            fugiat. Id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eum est eaque possimus
+            aspernatur, quia porro cupiditate sit rerum quas neque obcaecati nisi soluta fuga hic assumenda voluptates
+            minus voluptatum.
+        </p>
+    </section>
+    <section id="forms">
+        <!-- Similar structure to other pages; header, navigation, and footer remain consistent -->
+        <h2>Forms</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Submit">
+        </form>
+        <p>THIS IS AN EXAMPLE OF FORM</p>
+
+    </section>
+
+    <section id="list">
+        <h2>Lists</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ol>
+            <li>Ordered Item 1</li>
+            <li>Ordered Item 2</li>
+            <li>Ordered Item 3</li>
+        </ol>
+        <p>THIS IS AN EXAMPLE OF LIST</p>
+
+    </section>
+    <section id="table">
+        <h2>Tables</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>25</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td>30</td>
+                    <td>Canada</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>THIS IS AN EXAMPLE OF TABLE</p>
+    </section>
+    <section>
+        <h2>JAVA SCRIPT</h2>
+        <script>
+
+            document.write("JavaScript is working!");
+
+        </script>
+        <p>THIS IS AN EXAMPLE OF JAVA SCRIPT</p>
+    </section>
+    <section>
+        <h2>JQUERY</h2>
+
+        <div id="open" style="padding: 1em; border: 3px solid black; 
+    font-size: 25px;">We are open</div>
+        <div id="closed" style="padding: 1em; border: 3px solid black; 
+    font-size: 25px;">We are closed</div>
+        <script src="jquery.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(function () {
+                $("#closed").hide();
+                $("#open, #closed").click(function (event) {
+                    $("#open, #closed").toggle();
+                });
+            });
+        </script>
+        <p>THIS IS AN EXAMPLE OF JQUERY TOGGLE</p>
+        <p>This is the first paragraph on the page.</p>
+        <p>This is the second paragraph on the page.</p>
+        <script src="jquery.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("p").mouseenter(function () {
+                    $(this).addClass("highlighted");
+                });
+                $("p").mouseleave(function () {
+                    $(this).removeClass("highlighted");
+                });
+            })
+        </script>
+        <p>THIS IS AN EXAMPLE OF MOUSEENTER</p>
+
+    </section>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quibusdam pariatur explicabo incidunt fugiat
+        quisquam voluptatum ducimus facere suscipit enim praesentium distinctio neque in harum, non possimus quo sunt
+        reiciendis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum dolore inventore impedit placeat?
+        Maxime adipisci consequuntur, fugiat exercitationem ea repudiandae et. Accusamus adipisci explicabo distinctio
+        atque enim fugit animi facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum autem
+        aspernatur unde deserunt minima, accusantium earum neque facere beatae, nam assumenda sint, repellendus
+        similique voluptates eos! Vel, totam dolorem.</P>
+    <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tenetur voluptate consequuntur amet laudantium
+        dolore ullam veritatis ab sequi distinctio. Officia facilis ut corporis tempora, distinctio esse quia. Eos,
+        exercitationem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iusto ipsa ab officiis amet culpa laudantium
+        repellendus, consequuntur illo quasi expedita molestiae officia beatae fugit nam voluptate tempore error
+        possimus!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias culpa nam, voluptas quas unde optio autem ipsa
+        saepe ex dolor possimus, laborum praesentium placeat reiciendis maxime hic amet nulla ducimus.
+    </section>
+    <section>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore architecto deleniti autem inventore cumque in
+        omnis? Nam nemo rem quam est dolorem necessitatibus delectus a repudiandae? Maiores quibusdam ipsa corrupti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi praesentium suscipit voluptatibus repudiandae
+        dolores ut accusamus assumenda magnam animi cumque. Suscipit, incidunt? Odio eius iure laboriosam molestiae
+        tempora placeat sapiente!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quisquam eveniet, nobis non magnam illum
+        repellat assumenda error aut id soluta sequi, alias, ea eum? Impedit eius necessitatibus maxime reprehenderit.
+    </section>
+    <section>
+        <h2>Images</h2>
+        <img src="download.png" alt="hyml">THIS IS AN EXAMPLE OF AN IMAGE
+    </section>
+    <p style="color:white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque illo quaerat doloribus ipsa veritatis aperiam
+    quos, vero, atque impedit ipsam tempora, eaque deleniti praesentium unde ducimus. Alias dolorum fuga sunt?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nulla odit illum voluptatibus provident quibusdam,
+    sed, dolor vero veritatis molestias quod, aut ipsum cumque libero fugit eos sint dolorum vel.
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore eveniet amet esse exercitationem facere quidem quas
+    tempora, illo soluta ratione eius quasi, voluptatum porro nobis. Vero, voluptas! Molestiae, quas asperiores!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolores ipsam labore doloribus aperiam molestiae.
+    Aliquid doloremque accusantium itaque reiciendis voluptate quasi, quo voluptas nihil vitae aspernatur aliquam.
+    Delectus, autem.</p>
+
+    <footer>
+        <p> designed by Subhadra Panda
+            &copy; 2024 Interactive Website</p>
+    </footer>
+</body>
+
+</html>
+
+ 
+ 
